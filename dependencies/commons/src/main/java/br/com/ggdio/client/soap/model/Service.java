@@ -1,0 +1,56 @@
+package br.com.ggdio.client.soap.model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import br.com.ggdio.client.common.model.TO;
+
+/**
+ * SOAP Webservice Service model
+ * @author Guilherme Dio
+ *
+ */
+public class Service extends TO{
+	
+	private static final long serialVersionUID = 1L;
+
+	private static final String NAME = "NAME";
+	private static final String NAMESPACE = "NAMESPACE";
+	private static final String PORTS = "PORTS";
+	
+	public Service() {
+		this("", new Namespace(), new ArrayList<Port>());
+	}
+	
+	public Service(String name, Namespace namespace, List<Port> ports){
+		setName(name);
+		setNamespace(namespace);
+		setPorts(ports);
+	}
+	
+	public String getName(){
+		return getString(NAME);
+	}
+	
+	public void setName(String name) {
+		addData(NAME, name);
+	}
+	
+	public Namespace getNamespace(){
+		return (Namespace) getData(NAMESPACE);
+	}
+	
+	public void setNamespace(Namespace namespace){
+		addData(NAMESPACE, namespace);
+	}
+	
+	@SuppressWarnings("unchecked")
+	public List<Port> getPorts(){
+		return (List<Port>) getData(PORTS);
+	}
+	
+	public void setPorts(List<Port> ports){
+		addData(PORTS, ports);
+	}
+	
+}

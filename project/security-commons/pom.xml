@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<name>GGDIO::Security Commons</name>
+
+	<groupId>br.com.ggdio</groupId>
+	<artifactId>security-commons</artifactId>
+	<packaging>jar</packaging>
+	<version>1.0.0-RELEASE</version>
+
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>br.com.ggdio</groupId>
+			<artifactId>commons</artifactId>
+			<version>1.0.0-RELEASE</version>
+		</dependency>
+
+		<dependency>
+			<groupId>br.com.ggdio</groupId>
+			<artifactId>specs</artifactId>
+			<version>1.0.0-RELEASE</version>
+		</dependency>
+	</dependencies>
+
+</project>
