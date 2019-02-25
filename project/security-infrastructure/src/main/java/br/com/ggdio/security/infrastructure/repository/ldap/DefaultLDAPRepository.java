@@ -38,7 +38,7 @@ public class DefaultLDAPRepository implements LDAPRepository {
 
 		String baseDn = "";
 		if ("CUSTOMDOMAIN".equalsIgnoreCase(domain)) {
-			url.append("ldapprbbr.");
+			url.append("ldapggdio.");
 			baseDn = "DC=ssub2,DC=ssub1,DC=mmain";
 		} else {
 			domain = "DEFAULTDOMAIN";
